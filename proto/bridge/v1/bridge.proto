@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package bridge.v1;
+
+option go_package = "github.com/xend-finance/bridge-proto/gen/go/bridge/v1;bridgev1";
+
+service BridgeService {
+  rpc SignMessage(SignMessageRequest) returns (SignMessageResponse);
+}
+
+message SignMessageRequest {
+  string from_bridge_address      = 1;
+  string to_bridge_assist_address = 2;
+  string from_chain               = 3;
+  string from_user                = 4;
+  uint64 index                    = 5;
+}
+
+message SignMessageResponse {
+  string signature = 1;
+}
