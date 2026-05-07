@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package bridge.v1;
 
-option go_package = "github.com/xend-finance/bridge-proto/gen/go/bridge/v1;bridgev1";
+option go_package = "github.com/xendfinance/bridge-proto/gen/go/bridge/v1;bridgev1";
 
 service BridgeService {
   rpc SignMessage(SignMessageRequest) returns (SignMessageResponse);

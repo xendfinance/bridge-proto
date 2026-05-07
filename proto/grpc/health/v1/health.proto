@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package grpc.health.v1;
 
-option go_package = "github.com/xend-finance/bridge-proto/gen/go/grpc/health/v1;healthv1";
+option go_package = "github.com/xendfinance/bridge-proto/gen/go/grpc/health/v1;healthv1";
 
 service Health {
   rpc Check(HealthCheckRequest) returns (HealthCheckResponse);
