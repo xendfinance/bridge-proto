@@ -1,0 +1,9 @@
+{
+  "name": "bridge-proto",
+  "version": "1.0.0",
+  "description": "Protobuf definitions for AssetChain bridge relayer",
+  "files": [
+    "proto"
+  ],
+  "license": "MIT"
+}
